@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-jul-2014, 20:28:21
+    Author     : Alvaro
+*/
+
+#content {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    height: 65px;
+    background-color: #6f5499;    
+    border-bottom: 3px solid #6F5471;
+    color: white;
+    text-align: center; 
+    margin-top: -20px;
+}
+
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+header h2 {
+    padding-top: 12px;
+}
+
+h3 {
+    border: 1px solid #6F545B;
+    color: #FFFFFF !important;
+    background-color: #6F548D;
+    padding: 5px;
+    border-radius: 8px 1px 8px 0px;
+}
+
+.option-menu {
+    float: left;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    border: 2px solid #6F5471;
+    margin: 0px 10px 0px 10px;
+    background-color: #6f5499;
+    color: #ffffff;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.option-menu:hover {
+    border: 2px solid #6F5471;
+    background-color: #6F5471;
+    cursor: pointer;
+}
+
+#back-button {
+    display: none;
+    clear: both;
+}
+
+#back-button:hover {
+    cursor: pointer;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+.input-group .form-control {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+.protected .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.text-control {
+    width: 140px !important;
+    float: left;
+}
+
+.label-input {
+    float: left;
+    margin-top: 6px;
+    clear: both;
+}
+
+.label-input-pos {
+    float: left;
+    margin-top: 6px;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
+}
+
+#button-generator-div {
+    display: none;
+}
+
+fieldset {
+    width: 325px;
+}

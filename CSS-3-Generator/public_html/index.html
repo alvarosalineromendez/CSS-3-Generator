@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CSS 3 Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.js"></script>
+        <script src="js/operations.js"></script>
+        <script src="js/changename.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
+    </head>
+    <body>
+        <header><h2>CSS 3 Generator</h2></header>
+        <div id="content">
+            <h3 id="title-menu">Choose operation</h3>
+            <div id="menu">
+                <div class="option-menu" id="button-generator-button">Button generator</div>
+                <div class="option-menu" id="menu-generator-button">Menu generator</div>
+            </div>
+            <div id="button-generator-div">
+                <div class="left">
+                    <label class="label-input">Font size</label>
+                    <input type="text" value="16" id="font-size-property" class="lessVariable form-control ng-pristine ng-valid text-control">
+                    <label class="label-input-pos">px</label>
+                    <br>
+                    <label class="label-input">Background color</label>
+                    <input type="text" value="#FFF" id="background-color-property" class="lessVariable form-control ng-pristine ng-valid text-control">
+                    <br>
+                    <label class="label-input">Font color</label>
+                    <input type="text" value="#000" id="font-color-property" class="lessVariable form-control ng-pristine ng-valid text-control">
+                    <br>
+                    <fieldset>
+                        <legend>Shadow</legend>
+                        <label class="label-input">Horizontal shadow</label>
+                        <input type="text" value="5" id="horizontal-shadow-property" class="lessVariable form-control ng-pristine ng-valid text-control">
+                        <label class="label-input-pos">px</label>
+                        <br>
+                        <label class="label-input">Vertical shadow</label>
+                        <input type="text" value="5" id="vertical-shadow-property" class="lessVariable form-control ng-pristine ng-valid text-control">
+                        <label class="label-input-pos">px</label>
+                        <br>
+                        <label class="label-input">Blur shadow</label>
+                        <input type="text" value="5" id="blur-shadow-property" class="lessVariable form-control ng-pristine ng-valid text-control">
+                        <label class="label-input-pos">px</label>
+                        <br>
+                        <label class="label-input">Color shadow</label>
+                    <input type="text" value="#000" id="color-shadow-property" class="lessVariable form-control ng-pristine ng-valid text-control">
+                    </fieldset>
+
+
+
+
+
+                </div>
+                <div class="right">
+                    <h4>Result</h4>
+                    <input type="button" id="button-result" value="aa">
+                </div>
+            </div>
+            <div id="back-button">Back to menu</div>
+        </div>
+    </body>
+</html>

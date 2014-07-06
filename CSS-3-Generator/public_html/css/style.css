@@ -152,10 +152,15 @@ button, input, optgroup, select, textarea {
     float: right;
 }
 
-#button-generator-div {
+#button-generator-div, #menu-generator-div {
     display: none;
 }
 
 fieldset {
     width: 325px;
+}
+
+#menu-result > li {
+    float: left;
+    list-style: none;
 }

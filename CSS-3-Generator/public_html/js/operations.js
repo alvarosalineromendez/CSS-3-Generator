@@ -12,10 +12,23 @@ $(document).ready(function() {
             case "Button generator":
                 $("#button-generator-div").show();
                 $("#button-result").css("font-size", $("#font-size-property")[0].value + "px");
+                $("#button-result").css("border-radius", $("#border-radius-property")[0].value + "px");
                 $("#button-result").css("background-color", $("#background-color-property")[0].value);
                 $("#button-result").css("color", $("#font-color-property")[0].value);
                 $("#button-result").css("box-shadow", $("#horizontal-shadow-property")[0].value + "px " + $("#vertical-shadow-property")[0].value + "px " + $("#blur-shadow-property")[0].value + "px " + $("#color-shadow-property")[0].value);
-
+                var text_css_code = "font-size:" + $("#font-size-property")[0].value + "px";
+                text_css_code += "\n";
+                text_css_code += "border-radius:" + $("#border-radius-property")[0].value + "px";
+                text_css_code += "\n";
+                text_css_code += "backgorund-color:" + $("#background-color-property")[0].value;
+                text_css_code += "\n";
+                text_css_code += "color:" + $("#font-color-property")[0].value;
+                text_css_code += "\n";
+                text_css_code += "box-shadow:" + $("#horizontal-shadow-property")[0].value + "px " + $("#vertical-shadow-property")[0].value + "px " + $("#blur-shadow-property")[0].value + "px " + $("#color-shadow-property")[0].value;
+                $("#button-generator-div .css-code").text(text_css_code);
+                break;
+            case "Menu generator":
+                $("#menu-generator-div").show();
                 break;
         }
     });
@@ -24,6 +37,7 @@ $(document).ready(function() {
         $("#menu").show();
         $("#back-button").hide();
         $("#button-generator-div").hide();
+        $("#menu-generator-div").hide();
     });
 
     // Change values of the button generator
@@ -50,8 +64,20 @@ $(document).ready(function() {
             case "color-shadow-property":
                 $("#button-result").css("box-shadow", $("#horizontal-shadow-property")[0].value + "px " + $("#vertical-shadow-property")[0].value + "px " + $("#blur-shadow-property")[0].value + "px " + $(this)[0].value);
                 break;
+            case "border-radius-property":
+                $("#button-result").css("border-radius", $(this)[0].value + "px");
+                break;
         }
-
+        var text_css_code = "font-size:" + $("#font-size-property")[0].value + "px";
+        text_css_code += "\n";
+        text_css_code += "border-radius:" + $("#border-radius-property")[0].value + "px";
+        text_css_code += "\n";
+        text_css_code += "backgorund-color:" + $("#background-color-property")[0].value;
+        text_css_code += "\n";
+        text_css_code += "color:" + $("#font-color-property")[0].value;
+        text_css_code += "\n";
+        text_css_code += "box-shadow:" + $("#horizontal-shadow-property")[0].value + "px " + $("#vertical-shadow-property")[0].value + "px " + $("#blur-shadow-property")[0].value + "px " + $("#color-shadow-property")[0].value;
+        $("#button-generator-div .css-code").text(text_css_code);
     });
 });
 

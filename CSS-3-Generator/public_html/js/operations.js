@@ -13,9 +13,11 @@ $(document).ready(function() {
                 $("#button-generator-div").show();
                 $("#button-result").css("font-size", $("#font-size-property")[0].value + "px");
                 $("#button-result").css("border-radius", $("#border-radius-property")[0].value + "px");
+                $("#button-result").css("padding", $("#padding-property")[0].value + "px");
                 $("#button-result").css("background-color", $("#background-color-property")[0].value);
                 $("#button-result").css("color", $("#font-color-property")[0].value);
                 $("#button-result").css("box-shadow", $("#horizontal-shadow-property")[0].value + "px " + $("#vertical-shadow-property")[0].value + "px " + $("#blur-shadow-property")[0].value + "px " + $("#color-shadow-property")[0].value);
+                $("#button-result").css("border", $("#border-size-property")[0].value + "px solid " + $("#border-color-property")[0].value);
                 var text_css_code = "font-size:" + $("#font-size-property")[0].value + "px";
                 text_css_code += "\n";
                 text_css_code += "border-radius:" + $("#border-radius-property")[0].value + "px";
@@ -24,7 +26,11 @@ $(document).ready(function() {
                 text_css_code += "\n";
                 text_css_code += "color:" + $("#font-color-property")[0].value;
                 text_css_code += "\n";
+                text_css_code += "border:" + $("#border-size-property")[0].value + "px solid " + $("#border-color-property")[0].value;
+                text_css_code += "\n";
                 text_css_code += "box-shadow:" + $("#horizontal-shadow-property")[0].value + "px " + $("#vertical-shadow-property")[0].value + "px " + $("#blur-shadow-property")[0].value + "px " + $("#color-shadow-property")[0].value;
+                text_css_code += "\n";
+                text_css_code += "padding:" + $("#padding-property")[0].value + "px";
                 $("#button-generator-div .css-code").text(text_css_code);
                 break;
             case "Menu generator":
@@ -67,6 +73,15 @@ $(document).ready(function() {
             case "border-radius-property":
                 $("#button-result").css("border-radius", $(this)[0].value + "px");
                 break;
+            case "border-size-property":
+                $("#button-result").css("border", $(this)[0].value + "px solid " + $("#border-color-property")[0].value);
+                break;
+            case "border-color-property":
+                $("#button-result").css("border", $("#border-size-property")[0].value + "px solid " + $(this)[0].value);
+                break;
+            case "padding-property":
+                $("#button-result").css("padding", $("#padding-property")[0].value + "px");
+                break;
         }
         var text_css_code = "font-size:" + $("#font-size-property")[0].value + "px";
         text_css_code += "\n";
@@ -76,7 +91,11 @@ $(document).ready(function() {
         text_css_code += "\n";
         text_css_code += "color:" + $("#font-color-property")[0].value;
         text_css_code += "\n";
+        text_css_code += "border:" + $("#border-size-property")[0].value + "px solid " + $("#border-color-property")[0].value;
+        text_css_code += "\n";
         text_css_code += "box-shadow:" + $("#horizontal-shadow-property")[0].value + "px " + $("#vertical-shadow-property")[0].value + "px " + $("#blur-shadow-property")[0].value + "px " + $("#color-shadow-property")[0].value;
+        text_css_code += "\n";
+        text_css_code += "padding:" + $("#padding-property")[0].value + "px";
         $("#button-generator-div .css-code").text(text_css_code);
     });
 });

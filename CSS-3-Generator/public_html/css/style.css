@@ -174,3 +174,13 @@ fieldset {
     position: relative;
     left: 25%;
 }
+
+#back-button {
+    border: 1px solid #6F545B;
+    color: #FFFFFF !important;
+    width: 100px;
+    background-color: #6F548D;
+    left: 44%;
+    position: relative;
+    top: 22px;
+}

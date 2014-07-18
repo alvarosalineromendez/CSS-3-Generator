@@ -135,14 +135,31 @@ button, input, optgroup, select, textarea {
     float: left;
     margin-top: 6px;
     clear: both;
-    text-align: left;
-    width: 125px;
+    width: 119px;
+    border: 2px solid #6F545B;
+    border-right: 0;
+    height: 33px;
+    position: relative;
+    top: -5.5px;
+    color: #fff;
+    background-color: #6F548D;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .label-input-pos {
     float: left;
-    margin-top: 6px;
-    margin-left: 5px;
+    border: 2px solid #6F545B;
+    color: white;
+    background-color: #8669A7;
+    border-radius: 0px 10px 10px 0px;
+    height: 33px;
+    width: 29px;
+    text-align: center;
+    position: relative;
+    line-height: 25px;
+    top: 1px;
 }
 
 .left {
@@ -183,4 +200,8 @@ fieldset {
     left: 44%;
     position: relative;
     top: 22px;
+}
+
+#menu-result {
+    margin-bottom: 65px;
 }

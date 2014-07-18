@@ -40,6 +40,21 @@ $(document).ready(function() {
                 $("#menu-generator-div #menu-result > li").css("font-size", $("#menu-generator-div #font-size-menu-property")[0].value + "px");
                 $("#menu-generator-div #menu-result > li").css("background-color", $("#menu-generator-div #background-color-menu-property")[0].value);
                 $("#menu-generator-div #menu-result > li").css("color", $("#menu-generator-div #font-color-menu-property")[0].value);
+                $("#menu-generator-div #menu-result > li").css("box-shadow", $("#menu-generator-div #horizontal-shadow-menu-property")[0].value + "px " + $("#vertical-shadow-menu-property")[0].value + "px " + $("#blur-shadow-menu-property")[0].value + "px " + $("#color-shadow-menu-property")[0].value);
+                var text_css_code = "font-size:" + $("#menu-generator-div #font-size-menu-property")[0].value + "px";
+                text_css_code += "\n";
+                text_css_code += "border-radius:" + $("#menu-generator-div #border-radius-menu-property")[0].value + "px";
+                text_css_code += "\n";
+                text_css_code += "backgorund-color:" + $("#menu-generator-div #background-color-menu-property")[0].value;
+                text_css_code += "\n";
+                text_css_code += "color:" + $("#menu-generator-div #font-color-menu-property")[0].value;
+                text_css_code += "\n";
+                text_css_code += "border:" + $("#menu-generator-div #border-menu-size-property")[0].value + "px solid " + $("#menu-generator-div #border-menu-color-property")[0].value;
+                text_css_code += "\n";
+                text_css_code += "box-shadow:" + $("#menu-generator-div #horizontal-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #vertical-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #blur-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #color-shadow-menu-property")[0].value;
+                // text_css_code += "\n";
+                // text_css_code += "padding:" + $("#menu-generator-div #padding-menu-property")[0].value + "px";
+                $("#menu-generator-div .css-code").text(text_css_code);
 
                 break;
         }
@@ -124,8 +139,36 @@ $(document).ready(function() {
             case "font-color-menu-property":
                 $("#menu-generator-div #menu-result > li").css("color", $(this)[0].value);
                 break;
-
+            case "horizontal-shadow-menu-property":
+                $("#menu-generator-div #menu-result > li").css("box-shadow", $(this)[0].value + "px " + $("#menu-generator-div #vertical-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #blur-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #color-shadow-menu-property")[0].value);
+                break;
+            case "vertical-shadow-menu-property":
+                $("#menu-generator-div #menu-result > li").css("box-shadow", $("#menu-generator-div #horizontal-shadow-menu-property")[0].value + "px " + $(this)[0].value + "px " + $("#menu-generator-div #blur-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #color-shadow-menu-property")[0].value);
+                break;
+            case "blur-shadow-menu-property":
+                $("#menu-generator-div #menu-result > li").css("box-shadow", $("#menu-generator-div #horizontal-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #vertical-shadow-menu-property")[0].value + "px " + $(this)[0].value + "px " + $("#menu-generator-div #color-shadow-menu-property")[0].value);
+                break;
+            case "color-shadow-menu-property":
+                $("#menu-generator-div #menu-result > li").css("box-shadow", $("#menu-generator-div #horizontal-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #vertical-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #blur-shadow-menu-property")[0].value + "px " + $(this)[0].value);
+                break;
+            case "border-radius-property":
+                $("#menu-generator-div #menu-result > li").css("border-radius", $(this)[0].value + "px");
+                break;
         }
+        var text_css_code = "font-size:" + $("#menu-generator-div #font-size-menu-property")[0].value + "px";
+        text_css_code += "\n";
+        text_css_code += "border-radius:" + $("#menu-generator-div #border-radius-menu-property")[0].value + "px";
+        text_css_code += "\n";
+        text_css_code += "backgorund-color:" + $("#menu-generator-div #background-color-menu-property")[0].value;
+        text_css_code += "\n";
+        text_css_code += "color:" + $("#menu-generator-div #font-color-menu-property")[0].value;
+        text_css_code += "\n";
+        text_css_code += "border:" + $("#menu-generator-div #border-menu-size-property")[0].value + "px solid " + $("#menu-generator-div #border-menu-color-property")[0].value;
+        text_css_code += "\n";
+        text_css_code += "box-shadow:" + $("#menu-generator-div #horizontal-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #vertical-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #blur-shadow-menu-property")[0].value + "px " + $("#menu-generator-div #color-shadow-menu-property")[0].value;
+        // text_css_code += "\n";
+        // text_css_code += "padding:" + $("#menu-generator-div #padding-menu-property")[0].value + "px";
+        $("#menu-generator-div .css-code").text(text_css_code);
     });
 });
 
